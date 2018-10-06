@@ -1,6 +1,6 @@
 var mongoClient = require("mongodb").MongoClient;
 
-mongoClient.connect("mongodb://epocummongo:r25wD39S6WfTTFSfhouJXtxfvDJyvD7Gr0RhlyQra6kLCNC1IDfOkqLszMTUgCtagTymvqsYZKt2r2yT6yhB0w==@epocummongo.documents.azure.com:10255/?ssl=true",{ useNewUrlParser: true }, function (err, db) {
+mongoClient.connect("mongodb://user:pass==@source.documents.azure.com:10255/?ssl=true",{ useNewUrlParser: true }, function (err, db) {
  
 var dbo = db.db("admin");
 dbo.collection('persone').insertOne( {
