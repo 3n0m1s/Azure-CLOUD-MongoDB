@@ -4,21 +4,21 @@ mongoClient.connect("mongodb://user:pass==@source.documents.azure.com:10255/?ssl
  
 var dbo = db.db("admin");
 dbo.collection('persone').insertOne( {
-        "id": "AndersenFamily",
-        "lastName": "Andersen",
+        "name": "nome",
+        "lastName": "cognome",
         "parents": [
-            { "firstName": "Thomas" },
-            { "firstName": "Mary Kay" }
+            { "firstName": "giuliano" },
+            { "firstName": "loretta" }
         ],
         "children": [
-            { "firstName": "John", "gender": "male", "grade": 7 }
+            { "firstName": "", "gender": "male", "grade": 7 }
         ],
         "pets": [
-            { "givenName": "Fluffy" }
+            { "givenName": "silly" }
         ],
-        "address": { "country": "USA", "state": "WA", "city": "Seattle" }
+        "address": { "country": "ITA", "state": "ITA", "city": "Perugia" }
     }, function(err, result) {
-    console.log("Inserted a document into the families collection.");
+    console.log("Inserted a document into the persone's collection.");
 });
 
 
